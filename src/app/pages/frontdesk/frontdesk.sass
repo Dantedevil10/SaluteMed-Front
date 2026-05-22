@@ -15,9 +15,38 @@
     & button
         font-size: 1.1rem
         border: 1px solid transparent
-        box-shadow: 1px 1px 8px grey
+        box-shadow: 1px 1px 10px grey
+        border-radius: 10px
         transition: all 0.5s ease
         &:hover
-            border-radius: 10px
             border: 1px solid grey
             background: #dbdbdb
+
+.patient-screening
+    border-radius: 10px
+    //background: red
+    border: 0.9px solid grey
+    display: flex
+    flex-direction: column
+    width: 90%
+    margin: auto
+    box-shadow: 2px 2px 3px black
+    cursor: pointer
+    transition: all ease 0.2s
+    &:hover
+       box-shadow: 0px 0px 0px transparent
+       background: #cecece91
+    & div:nth-child(1)
+        display: flex 
+        justify-content: space-between
+        padding: 10px 
+        p
+            color: white
+            background: grey
+            border: 1px solid transparent
+    & div:nth-child(3)
+        display: flex
+        justify-content: end
+        margin-bottom: 10px
+        button
+            margin-right: 10px
