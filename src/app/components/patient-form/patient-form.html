@@ -1,55 +1,65 @@
 <div class="patient-form-container">
     <form class="patient-form-data">
         <div class="form-group">
-            <div>
-                <label for="patient-name">Qual o nome (Completo) do Paciente ?</label>
-                <input id="patient-name" type="text" placeholder="">
+            <div class="field">
+                <label for="patient-name">Qual o nome (Completo) do Paciente?</label>
+                <input id="patient-name" name="patient-name" type="text" required>
             </div>
-            <div>
-                <label for="patient-born">Qual a data de nascimento Paciente ? (Dia/Mês/Ano)</label>
-                <input id="patient-born" type="text" placeholder="EX: (01/12/1955)">
+            <div class="field">
+                <label for="patient-born">Qual a data de nascimento?</label>
+                <input id="patient-born" name="patient-born" type="date">
             </div>
         </div>
+
         <div class="form-group">
-            <label for="patient-genre">Qual o Sexo ?</label>
-            <select id="patient-genre">
-                <option value="Masculino">Masculino</option>
-                <option value="Feminino">Feminino</option>
-            </select>
+            <div class="field">
+                <label for="patient-sex">Qual o Sexo?</label>
+                <select id="patient-sex" name="patient-sex">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+            </div>
         </div>
+
         <div class="form-group">
-            <div>
-                <label for="patient-mother-name">Qual o nome (Completo) da Mãe do Paciente ?</label>
-                <input id="patient-mother-name" type="text" placeholder="">
+            <div class="field">
+                <label for="patient-mother-name">Qual o nome (Completo) da Mãe?</label>
+                <input id="patient-mother-name" name="patient-mother-name" type="text">
             </div>
-            <div>
-                <label for="sus-number">Numero SuS ?</label>
-                <input id="sus-number" type="text" placeholder="Ex: 1122345687">
+            <div class="field">
+                <label for="sus-number">Número SUS?</label>
+                <input id="sus-number" name="sus-number" type="text" placeholder="Ex: 1122345687">
             </div>
         </div>
+
         <div class="form-group">
-            <div>
-                <label for="patient-id">Documento de identificação (CPF) ?</label>
-                <input id="patient-id" type="text" placeholder="Ex : 111.111.111-50">
+            <div class="field">
+                <label for="patient-id">Documento de identificação (CPF)?</label>
+                <input id="patient-id" name="patient-id" type="text" placeholder="Ex: 111.111.111-50">
             </div>
-            <div>
-                <label for="patient-address">Endereço (Opcional) ?</label>
-                <input id="patient-address" type="text" placeholder="Ex: rua da suécia ,120 , 54111-00">
+            <div class="field">
+                <label for="patient-address">Endereço (Opcional)?</label>
+                <input id="patient-address" name="patient-address" type="text" placeholder="Ex: rua da suécia, 120">
             </div>
         </div>
+
         <div class="form-group">
-            <label for="isAlone">O Paciente veio acompanhado ?</label>
-            <select id="isAlone">
-                <option value="Sim">Sim</option>
-                <option value="Não">Não</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <div>
-                <label for="escort-name">Nome do Acompanhante ?</label>
-                <input disabled id="escort-name" type="text" placeholder="">
+            <div class="field">
+                <label for="isAlone">O Paciente veio acompanhado?</label>
+                <select id="isAlone" name="isAlone">
+                    <option value="Não">Não</option>
+                    <option value="Sim">Sim</option>
+                </select>
             </div>
         </div>
-        <button type="submit"> Registrar Novo Paciente</button>
-    </form>
-</div><br>
+
+        <div class="form-group">
+            <div class="field">
+                <label for="escort-name">Nome do Acompanhante?</label>
+                <input id="escort-name" name="escort-name" type="text" disabled>
+            </div>
+        </div>
+
+        <button type="submit">Registrar Novo Paciente</button>
+    </form><br>
+</div>
