@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Headeruser } from '../../components/headeruser/headeruser';
+import { PatientForm } from '../../components/patient-form/patient-form';
 
 @Component({
   selector: 'app-frontdesk',
-  imports: [Headeruser],
+  imports: [Headeruser,PatientForm],
   templateUrl: './frontdesk.html',
   styleUrl: './frontdesk.sass',
 })
